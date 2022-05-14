@@ -165,6 +165,7 @@
     color: #00F5D4;
     text-decoration: none;
   }
+
   @media all and (max-width: 700px) {
     .plans .plan-box:first-child {
       margin-bottom: 20px;
@@ -257,3 +258,24 @@
   .button{
     border-top: 2px solid black;
   }
+  .react-switch-handle{
+    height: 16px !important;
+        width: 16px !important;
+        border: 2px solid black !important;
+        background-color: transparent !important;
+    }
+    
+    .react-switch-bg{
+      height: 19px !important;
+    width: 46px !important;
+    background-color: transparent!important;
+    border: 2px solid black;
+    }
+    .react-switch-bg div:nth-child(2){
+      height: 24px !important;
+      top: -4px !important;
+      display: none;
+    }
+   .react-switch-bg div:nth-child(1) svg{
+     display: none;
+   }

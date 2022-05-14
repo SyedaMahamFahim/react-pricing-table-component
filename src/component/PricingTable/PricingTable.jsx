@@ -1,12 +1,23 @@
 import React, { useState, useEffect } from "react";
 import "./pricingtable.css";
+import Switch from "react-switch";
+
 
 const PricingTable = () => {
   const [standard, setStandard] = useState(1.1);
   const [pro, setPro] = useState(1.5);
   const [increment, setIncrement] = useState(1);
   const [monthly, setMonthly] = useState(true);
+  const [checked, setChecked] = useState(false);
 
+  const handleChange = nextChecked => {
+    setChecked(nextChecked);
+    if(checked){
+      setMonthly(true)
+    }else{
+      setMonthly(false)
+    }
+  };
   const setValues = () => {
     if (increment === 1) {
       if (monthly) {
@@ -34,13 +45,21 @@ const PricingTable = () => {
   return (
     <>
     <h1 className="plan-title">Choose a plan</h1>
+   
+   <h3 style={{
+     textAlign:"center"
+   }}>Set Monthly or Yearly</h3>
+   
       <div className="pricing-btn-div">
-        <button onClick={() => setMonthly(true)} className="pricing-btn">
-          Monthly
-        </button>
-        <button onClick={() => setMonthly(false)} className="pricing-btn">
-          Yearly
-        </button>
+      <Switch
+          onChange={handleChange}
+          checked={checked}
+          className="react-switch"
+         
+        />
+     
+     
+        
       </div>
       <div className="plans">
         <div className="plan-box">
