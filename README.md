@@ -44,8 +44,7 @@ Start the server
 
 # Screenshots
 
-![App Screenshot](https://user-images.githubusercontent.com/79671325/189221651-7d1ca2c8-5e5d-43bc-9c93-1f9c28a9ff75.png)
-
+![image](https://github.com/SyedaMahamFahim/react-pricing-table-component/assets/79671325/1c9f23dc-846b-4726-97c9-57ac0acc0ea6)
 
 
 
